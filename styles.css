@@ -4,6 +4,7 @@
   padding: 0;
   font-family: 'Open Sans', sans-serif;
 }
+
 /*
 * Light blue: `#75e2e6`
 * Dark blue: `#048eaa`
@@ -11,14 +12,103 @@
 * White text: `#ffffff`
 * Body text: `#000000`
 */
+body {
+  display: flex;
+  flex-direction: column;
+}
 
-
-/* freebie - if you don't like the way it was done feel free to delete, but it's not recommended you spend much time on this! */
 .hero-img {
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/park.jpg");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/park.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 200px;
-  height: 200px;
+  height: 500px;
 }
+
+.hero-img img {
+  border-radius: 50%;
+  border: #048eaa .25em solid;
+  width: 350px;
+}
+
+section img {
+  border-radius: 50%;
+  border: #048eaa .25em solid;
+}
+
+nav {
+  font-size: 1.5em;
+  display: flex;
+  background-color: #75e2e6;
+  color: white;
+  height: 2.5em;
+  padding: 0 1em 0 1em;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  height: 1.5em;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline;
+  margin-left: 1em;
+}
+
+button {
+  border: #048eaa .2em solid;
+  color: #048eaa;
+  font-size: 1em;
+  padding:.2em;
+  background:white;
+}
+
+.column-33{
+  display:flex;
+  flex-direction: row;
+  padding: 1.5em;
+
+
+}
+
+.dog-info{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em 2em 1em 2em;
+  justify-content: space-around;
+  height: 600px;
+}
+.dog-info p{
+  text-align: center;
+}
+
+.dog-info h3{
+  font-weight: lighter;
+}
+
+footer {
+  background-color: #048eaa;
+  color: white;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+  justify-content: space-around;
+}
+
+div {}
+
+div img {}
+
+/* freebie - if you don't like the way it was done feel free to delete, but it's not recommended you spend much time on this! */
